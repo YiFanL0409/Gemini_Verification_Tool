@@ -1,2 +1,83 @@
-# Gemini_Verification_Tool
-免费 Gemini Advanced 学生优惠 SheerID 验证工具。自动化高校证明文件生成器、SSO 绕过、Web 可视化界面、Windows 一键运行 EXE 程序。
+# Gemini SheerID 验证工具
+
+免费 Gemini Advanced 学生优惠 SheerID 验证工具。内置大学文档自动生成器、SSO 单点登录绕过、Web 可视化界面，提供 Windows 一键运行包。
+
+---
+
+## 项目简介
+
+本项目专为获取 Google One AI Premium (Gemini Advanced) 学生优惠而设计，全自动处理 SheerID 验证流程。通过简洁的 Web 界面，程序自动完成学生身份生成、证件制作及 SSO 登录绕过等复杂操作，小白也能轻松上手。
+
+## 核心功能
+
+- **全自动验证**：一键接管 SheerID 验证全流程，无需人工干预。
+- **Web 可视化界面**：浏览器操作，简单直观。
+- **智能证件生成**：自动合成逼真的学生 ID 卡，提高通过率。
+- **SSO 绕过技术**：跳过繁琐的学校门户登录步骤。
+- **防风控机制**：支持代理设置，有效规避 IP 限制和欺诈检测。
+- **开箱即用**：提供 Windows 单文件 EXE，免配置运行。
+
+## 使用指南（普通用户）
+
+### 使用预编译程序
+
+1.  下载 `GeminiVerifier.exe` 文件。
+2.  双击运行程序。
+3.  浏览器将自动打开 `http://127.0.0.1:8000` 页面。
+4.  输入你的 SheerID 验证链接（例如：`https://services.sheerid.com/verify/...`）。
+5.  （可选）如需绕过 IP 限制，请输入代理地址。
+6.  点击“开始验证”，观察实时日志即可。
+
+## 开发指南（开发者）
+
+### 环境要求
+
+-   Python 3.8+
+-   `httpx`
+-   `Pillow`
+-   `fastapi`
+-   `uvicorn`
+-   `websockets`
+
+### 源码运行
+
+1.  克隆仓库。
+2.  安装依赖：
+    ```bash
+    pip install httpx Pillow fastapi uvicorn websockets curl_cffi cloudscraper
+    ```
+3.  启动 Web 应用：
+    ```bash
+    python web_app.py
+    ```
+
+### 打包发布
+
+如需自行打包 EXE 文件：
+
+1.  运行构建脚本：
+    ```bash
+    build_exe.bat
+    ```
+2.  生成的可执行文件位于 `dist` 目录。
+
+## 验证后的权益
+
+验证成功后，你将获得：
+
+-   **Gemini Advanced**：使用 Google 最强大的 AI 模型。
+-   **2TB Google Drive**：超大云存储空间。
+-   **NotebookLM Pro**：AI 驱动的高级笔记与研究工具。
+-   **AI Video Credits**：Veo 视频生成额度。
+
+## 常见问题与排错
+
+如果验证过程中遇到错误：
+
+-   **住宅代理**：遇到风控拦截时，请尝试使用高质量的住宅代理 IP。
+-   **稍后重试**：建议每次尝试间隔 5-10 分钟。
+-   **更换链接**：如果当前链接多次失败，请重新从活动页面获取新的验证链接。
+
+## 免责声明
+
+本项目仅供教育和研究目的使用。请遵守相关服务条款，合理使用。
